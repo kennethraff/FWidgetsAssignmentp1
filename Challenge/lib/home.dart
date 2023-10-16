@@ -20,12 +20,50 @@ class _HomePageState extends State<HomePage> {
               width: double.infinity,
               child: Container(
                 decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                  colors: [Colors.lightBlue.shade100, Colors.white],
+                  gradient: LinearGradient(
+                   begin: Alignment.centerLeft,
+                   end: Alignment.centerRight,
+                    colors: [Colors.lightBlue.shade100, Colors.white],
+                  ),
                 ),
-              ),
+                child: Column(
+                  children: [
+                    Flexible(
+                    flex: 2,
+                    child: Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      child: Image.asset(
+                        'images/foto1.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      child: Image.asset(
+                        'images/foto1.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    flex: 4,
+                    child: Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      child: Image.asset(
+                        'images/foto1.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  ],
+                ),
+
               ),
             )
           ],
