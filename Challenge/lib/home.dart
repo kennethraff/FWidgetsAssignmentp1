@@ -1,3 +1,4 @@
+import 'package:depd23_first/booking.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -181,6 +182,25 @@ class _HomePageState extends State<HomePage> {
                 backgroundColor: isFavorite
                     ? Colors.white
                     : Colors.white60, //biar transparan 60%
+              ),
+            ),
+            Positioned(
+              bottom: 20.0, //margin atas
+              right: 10.0, //margin kanan
+              child: ElevatedButton(
+                onPressed: () {
+                 Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => BookingPage()));
+                },
+                child: Text(
+                  "Book Now",
+                  style: TextStyle(
+                      fontFamily: "Poppins",
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+                
               ),
             ),
           ],
